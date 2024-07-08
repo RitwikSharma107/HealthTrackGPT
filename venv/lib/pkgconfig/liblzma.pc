@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/_ritwik_sharma_/Documents/GenAI/venv
+exec_prefix=/Users/_ritwik_sharma_/Documents/GenAI/venv
+libdir=/Users/_ritwik_sharma_/Documents/GenAI/venv/lib
+includedir=/Users/_ritwik_sharma_/Documents/GenAI/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
